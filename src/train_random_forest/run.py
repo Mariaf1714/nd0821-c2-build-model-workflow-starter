@@ -111,7 +111,7 @@ def go(args):
     args.output_artifact,
     type="model_export",
     description="Trained Random Forest Model",
-    metadata=args.rf_config
+    metadata=rf_config
     )
     artifact.add_dir("random_forest_dir")
     run.log_artifact(artifact)
